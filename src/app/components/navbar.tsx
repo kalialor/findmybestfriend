@@ -8,11 +8,13 @@ export default function Navbar() {
       <nav className="bg-white border-gray-200 dark:bg-gray-900">
         <div className="max-w-screen-xl flex items-center justify-between mx-auto p-4">
           <div className="flex items-center space-x-2">
-            <Link href="/">
-              <a>
-                <Image src={Logo} className="w-8 h-8" alt="Find My Bestfriend Logo" priority={true} />
-              </a>
-            </Link>
+            <div className="w-12 h-12">
+              <Link href="/">
+                <a>
+                  <Image src={Logo} layout="fill" alt="Find My Bestfriend Logo" priority={true} />
+                </a>
+              </Link>
+            </div>
             <Link href="/" className="text-gray-900 hover:text-blue-700 dark:text-white dark:hover:text-blue-500">
               <a className="text-sm font-medium">Find My Bestfriend</a>
             </Link>
